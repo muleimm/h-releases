@@ -18,8 +18,10 @@ Copy the command below and paste it into your Command Prompt window. Right-click
 
 Hit **Enter**. The Hope installer downloads, asks for admin permission, and installs itself. A Hope shortcut appears on your Desktop when it's done.
 
+Paste exactly this (copy the whole line — there is nothing else to type):
+
 ```cmd
-C:\> powershell -Command "irm https://github.com/muleimm/h-releases/releases/download/v1.1.8/HopeSetup-1.1.8.exe -OutFile $env:TEMP\HopeSetup-1.1.8.exe; Start-Process $env:TEMP\HopeSetup-1.1.8.exe"
+powershell -Command "irm https://github.com/muleimm/h-releases/releases/download/v1.1.8/HopeSetup-1.1.8.exe -OutFile $env:TEMP\HopeSetup-1.1.8.exe; Start-Process $env:TEMP\HopeSetup-1.1.8.exe"
 ```
 
 > **What happens when you run this?**
