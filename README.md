@@ -21,7 +21,7 @@ Hit **Enter**. The Hope installer downloads, asks for admin permission, and inst
 Paste exactly this (copy the whole line — there is nothing else to type):
 
 ```cmd
-powershell -Command "irm https://github.com/muleimm/h-releases/releases/download/v1.1.11/HopeSetup-1.1.11.exe -OutFile $env:TEMP\HopeSetup-1.1.11.exe; Start-Process $env:TEMP\HopeSetup-1.1.11.exe"
+powershell -Command "irm https://github.com/muleimm/h-releases/releases/download/v1.1.12/HopeSetup-1.1.12.exe -OutFile $env:TEMP\HopeSetup-1.1.12.exe; Start-Process $env:TEMP\HopeSetup-1.1.12.exe"
 ```
 
 > **What happens when you run this?**
@@ -35,7 +35,7 @@ powershell -Command "irm https://github.com/muleimm/h-releases/releases/download
 
 - **Requirements:** Windows 10/11 (64-bit). No prerequisites — the installer adds the browser runtime silently if it is missing.
 - **Install location:** `C:\Program Files\Hope`
-- **Uninstall:** *Settings → Apps → Hope 1.1.11 → Uninstall*, or run `C:\Program Files\Hope\unins000.exe`.
-- **Verify your download:** SHA-256 of `HopeSetup-1.1.11.exe` — `CB8E9B36F761A36EE08EBCFCC3069787F832894A4842234C9934CD26F2FD7671`
+- **Uninstall:** *Settings → Apps → Hope 1.1.12 → Uninstall*, or run `C:\Program Files\Hope\unins000.exe`.
+- **Verify your download:** SHA-256 of `HopeSetup-1.1.12.exe` — `2F9E3A1EC5CC6393AED5C7624D939CF9C34A2BF9BD524E09341117865F97B54D`
 
-Latest release: [v1.1.11](https://github.com/muleimm/h-releases/releases/tag/v1.1.11)
+Latest release: [v1.1.12](https://github.com/muleimm/h-releases/releases/tag/v1.1.12)
