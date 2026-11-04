@@ -14,15 +14,15 @@ Press **Win + R**, type `cmd`, and hit Enter. Or search for "Command Prompt" in 
 
 Copy the command below and paste it into your Command Prompt window. Right-click to paste.
 
-### 3 — Press Enter & Done!
-
-Hit **Enter**. The Hope installer downloads, asks for admin permission, and installs itself. A Hope shortcut appears on your Desktop when it's done.
-
 Paste exactly this (copy the whole line — there is nothing else to type):
 
 ```cmd
-powershell -Command "irm https://github.com/muleimm/h-releases/releases/download/v1.1.12/HopeSetup-1.1.12.exe -OutFile $env:TEMP\HopeSetup-1.1.12.exe; Start-Process $env:TEMP\HopeSetup-1.1.12.exe"
+powershell -Command "irm https://github.com/muleimm/h-releases/releases/download/v1.2.2/HopeSetup-1.2.2.exe -OutFile $env:TEMP\HopeSetup-1.2.2.exe; Start-Process $env:TEMP\HopeSetup-1.2.2.exe"
 ```
+
+### 3 — Press Enter & Done!
+
+Hit **Enter**. The Hope installer downloads, asks for admin permission, and installs itself. A Hope shortcut appears on your Desktop when it's done.
 
 > **What happens when you run this?**
 >
@@ -35,7 +35,11 @@ powershell -Command "irm https://github.com/muleimm/h-releases/releases/download
 
 - **Requirements:** Windows 10/11 (64-bit). No prerequisites — the installer adds the browser runtime silently if it is missing.
 - **Install location:** `C:\Program Files\Hope`
-- **Uninstall:** *Settings → Apps → Hope 1.1.12 → Uninstall*, or run `C:\Program Files\Hope\unins000.exe`.
-- **Verify your download:** SHA-256 of `HopeSetup-1.1.12.exe` — `2F9E3A1EC5CC6393AED5C7624D939CF9C34A2BF9BD524E09341117865F97B54D`
+- **Uninstall:** *Settings → Apps → Hope 1.2.2 → Uninstall*, or run `C:\Program Files\Hope\unins000.exe`
+- **Verify your download:** SHA-256 of `HopeSetup-1.2.2.exe` — `0D297ACCEDC1FD38BCA3D6D3F8AC52F8F63BA2B0756D244F91666CDA8C4C3FA3`
 
-Latest release: [v1.1.12](https://github.com/muleimm/h-releases/releases/tag/v1.1.12)
+## What's new in 1.2.2
+
+Version bump on top of 1.2.1 — no behaviour changes. For the full notes of the previous release (account loading, login, dashboard, session setup, workspace), see [v1.2.1](https://github.com/muleimm/h-releases/releases/tag/v1.2.1).
+
+Latest release: [v1.2.2](https://github.com/muleimm/h-releases/releases/tag/v1.2.2) · All releases are kept and never overwritten.
