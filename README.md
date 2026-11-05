@@ -17,7 +17,7 @@ Copy the command below and paste it into your Command Prompt window. Right-click
 Paste exactly this (copy the whole line — there is nothing else to type):
 
 ```cmd
-powershell -Command "irm https://github.com/muleimm/h-releases/releases/download/v1.2.2/HopeSetup-1.2.2.exe -OutFile $env:TEMP\HopeSetup-1.2.2.exe; Start-Process $env:TEMP\HopeSetup-1.2.2.exe"
+powershell -Command "irm https://github.com/muleimm/h-releases/releases/download/v1.2.3/HopeSetup-1.2.3.exe -OutFile $env:TEMP\HopeSetup-1.2.3.exe; Start-Process $env:TEMP\HopeSetup-1.2.3.exe"
 ```
 
 ### 3 — Press Enter & Done!
@@ -35,11 +35,13 @@ Hit **Enter**. The Hope installer downloads, asks for admin permission, and inst
 
 - **Requirements:** Windows 10/11 (64-bit). No prerequisites — the installer adds the browser runtime silently if it is missing.
 - **Install location:** `C:\Program Files\Hope`
-- **Uninstall:** *Settings → Apps → Hope 1.2.2 → Uninstall*, or run `C:\Program Files\Hope\unins000.exe`
-- **Verify your download:** SHA-256 of `HopeSetup-1.2.2.exe` — `0D297ACCEDC1FD38BCA3D6D3F8AC52F8F63BA2B0756D244F91666CDA8C4C3FA3`
+- **Uninstall:** *Settings → Apps → Hope 1.2.3 → Uninstall*, or run `C:\Program Files\Hope\unins000.exe`
+- **Verify your download:** SHA-256 of `HopeSetup-1.2.3.exe` — `4088809DD1C7D1B93CAAF1628C24D9EDC05FE446126ECE7A301D977B8C05A008`
 
-## What's new in 1.2.2
+## What's new in 1.2.3
 
-Version bump on top of 1.2.1 — no behaviour changes. For the full notes of the previous release (account loading, login, dashboard, session setup, workspace), see [v1.2.1](https://github.com/muleimm/h-releases/releases/tag/v1.2.1).
+- All backend calls now go through the Cloudflare edge gateway instead of the raw project host.
+- An answer already on its way is no longer lost when the device token is silently refreshed in the meantime — only a real account or device change cancels a pending answer now.
+- Login form spacing holds at every DPI and window size; the workspace header reads **Exit** and the busy label reads **Working**.
 
-Latest release: [v1.2.2](https://github.com/muleimm/h-releases/releases/tag/v1.2.2) · All releases are kept and never overwritten.
+Latest release: [v1.2.3](https://github.com/muleimm/h-releases/releases/tag/v1.2.3) · All releases are kept and never overwritten.
