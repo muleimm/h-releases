@@ -17,7 +17,7 @@ Copy the command below and paste it into your Command Prompt window. Right-click
 Paste exactly this (copy the whole line — there is nothing else to type):
 
 ```cmd
-powershell -Command "irm https://github.com/muleimm/h-releases/releases/download/v1.2.3/HopeSetup-1.2.3.exe -OutFile $env:TEMP\HopeSetup-1.2.3.exe; Start-Process $env:TEMP\HopeSetup-1.2.3.exe"
+powershell -Command "irm https://github.com/muleimm/h-releases/releases/download/v1.2.4/HopeSetup-1.2.4.exe -OutFile $env:TEMP\HopeSetup-1.2.4.exe; Start-Process $env:TEMP\HopeSetup-1.2.4.exe"
 ```
 
 ### 3 — Press Enter & Done!
@@ -35,13 +35,13 @@ Hit **Enter**. The Hope installer downloads, asks for admin permission, and inst
 
 - **Requirements:** Windows 10/11 (64-bit). No prerequisites — the installer adds the browser runtime silently if it is missing.
 - **Install location:** `C:\Program Files\Hope`
-- **Uninstall:** *Settings → Apps → Hope 1.2.3 → Uninstall*, or run `C:\Program Files\Hope\unins000.exe`
-- **Verify your download:** SHA-256 of `HopeSetup-1.2.3.exe` — `4088809DD1C7D1B93CAAF1628C24D9EDC05FE446126ECE7A301D977B8C05A008`
+- **Uninstall:** *Settings → Apps → Hope 1.2.4 → Uninstall*, or run `C:\Program Files\Hope\unins000.exe`
+- **Verify your download:** SHA-256 of `HopeSetup-1.2.4.exe` — `EBBE8AF26EF68B5488EAC3CBD087E6EDDAC2CCF049DEF9D07C26405639815C1D`
 
-## What's new in 1.2.3
+## What's new in 1.2.4
 
-- All backend calls now go through the Cloudflare edge gateway instead of the raw project host.
-- An answer already on its way is no longer lost when the device token is silently refreshed in the meantime — only a real account or device change cancels a pending answer now.
-- Login form spacing holds at every DPI and window size; the workspace header reads **Exit** and the busy label reads **Working**.
+- **Sign in again** no longer costs you your device: the activation survives, with stored device credentials held behind fresh account checks. **Sign Out** still clears account and device.
+- Auth failures say which one they are — a connection problem offers **Try again**, an expired session offers **Sign in again**.
+- Account tokens now carry the account generation they were issued for, so a late refresh cannot overwrite the account you are actually signed in to. Session files are written atomically.
 
-Latest release: [v1.2.3](https://github.com/muleimm/h-releases/releases/tag/v1.2.3) · All releases are kept and never overwritten.
+Latest release: [v1.2.4](https://github.com/muleimm/h-releases/releases/tag/v1.2.4) · All releases are kept and never overwritten.
