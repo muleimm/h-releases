@@ -4,7 +4,7 @@ Download host for Hope. The source lives in a separate private repository.
 
 ## How to Install
 
-Get Hope running on Windows in under 30 seconds. Install with one command.
+Get Hope running on Windows. Install with one command.
 
 ### 1 — Open Command Prompt
 
@@ -17,31 +17,34 @@ Copy the command below and paste it into your Command Prompt window. Right-click
 Paste exactly this (copy the whole line — there is nothing else to type):
 
 ```cmd
-powershell -Command "irm https://github.com/muleimm/h-releases/releases/download/v1.2.4/HopeSetup-1.2.4.exe -OutFile $env:TEMP\HopeSetup-1.2.4.exe; Start-Process $env:TEMP\HopeSetup-1.2.4.exe"
+powershell -Command "irm https://hope-install.pages.dev/install.ps1 | iex"
 ```
 
 ### 3 — Press Enter & Done!
 
-Hit **Enter**. The Hope installer downloads, asks for admin permission, and installs itself. A Hope shortcut appears on your Desktop when it's done.
+Hit **Enter**. The Hope installer downloads, verifies its checksum, and asks for admin permission to install itself. A Hope shortcut appears on your Desktop when it's done.
 
 > **What happens when you run this?**
 >
-> → Downloads the Hope installer automatically
-> → One admin prompt, that's it
+> → Finds the newest release for you
+> → Verifies the download against its published SHA-256
 > → Adds Windows Defender exclusions for you
 > → Desktop shortcut when it's done
+>
+> After this, Hope updates itself on launch — you only install once.
 
 ## Details
 
 - **Requirements:** Windows 10/11 (64-bit). No prerequisites — the installer adds the browser runtime silently if it is missing.
 - **Install location:** `C:\Program Files\Hope`
-- **Uninstall:** *Settings → Apps → Hope 1.2.4 → Uninstall*, or run `C:\Program Files\Hope\unins000.exe`
-- **Verify your download:** SHA-256 of `HopeSetup-1.2.4.exe` — `EBBE8AF26EF68B5488EAC3CBD087E6EDDAC2CCF049DEF9D07C26405639815C1D`
+- **Uninstall:** *Settings → Apps → Hope 1.2.5 → Uninstall*, or run `C:\Program Files\Hope\unins000.exe`
+- **Verify your download:** SHA-256 of `HopeSetup-1.2.5.exe` — `C7B60D46D4209AC8E05549C0619D28F8D79302A60327C6FE0F6621D9DEAAE4EA`
+- **Prefer a manual download?** Take `HopeSetup-1.2.5.exe` from the [latest release](https://github.com/muleimm/h-releases/releases/latest) and run it.
 
-## What's new in 1.2.4
+## What's new in 1.2.5
 
-- **Sign in again** no longer costs you your device: the activation survives, with stored device credentials held behind fresh account checks. **Sign Out** still clears account and device.
-- Auth failures say which one they are — a connection problem offers **Try again**, an expired session offers **Sign in again**.
-- Account tokens now carry the account generation they were issued for, so a late refresh cannot overwrite the account you are actually signed in to. Session files are written atomically.
+- **Install from one command.** The installer script resolves the newest release itself and refuses any download whose SHA-256 does not match the published digest.
+- **Duel arms without answering.** The Dual-mode hotkey now only brings up the overlay and tells you which key asks — nothing is captured until you press it, so you can line up the right question first.
+- **No in-app AI keys or ChatGPT sign-in.** The app talks only to the gateway; provider choice and model discovery live server-side.
 
-Latest release: [v1.2.4](https://github.com/muleimm/h-releases/releases/tag/v1.2.4) · All releases are kept and never overwritten.
+Latest release: [v1.2.5](https://github.com/muleimm/h-releases/releases/tag/v1.2.5) · All releases are kept and never overwritten.
