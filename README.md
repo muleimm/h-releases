@@ -38,7 +38,7 @@ Hit **Enter**. The Hope installer downloads, verifies its checksum, and asks for
 - **Requirements:** Windows 10/11 (64-bit). No prerequisites — the installer adds the browser runtime silently if it is missing.
 - **Install location:** `C:\Program Files\Hope`
 - **Uninstall:** *Settings → Apps → Hope 1.2.5 → Uninstall*, or run `C:\Program Files\Hope\unins000.exe`
-- **Verify your download:** SHA-256 of `HopeSetup-1.2.5.exe` — `C7B60D46D4209AC8E05549C0619D28F8D79302A60327C6FE0F6621D9DEAAE4EA`
+- **Verify your download:** SHA-256 of `HopeSetup-1.2.5.exe` — `9148A9CD52B36137A28C51901C2F9515FA10E520D46DF7AD0F5C076952859C05`
 - **Prefer a manual download?** Take `HopeSetup-1.2.5.exe` from the [latest release](https://github.com/muleimm/h-releases/releases/latest) and run it.
 
 ## What's new in 1.2.5
