@@ -37,15 +37,15 @@ Hit **Enter**. The Hope installer downloads, verifies its checksum, and asks for
 
 - **Requirements:** Windows 10/11 (64-bit). No prerequisites — the installer adds the browser runtime silently if it is missing.
 - **Install location:** `C:\Program Files\Hope`
-- **Uninstall:** *Settings → Apps → Hope 1.3.1 → Uninstall*, or run `C:\Program Files\Hope\unins000.exe`
-- **Verify your download:** SHA-256 of `HopeSetup-1.3.1.exe` — `61280949BED0ED2015B69FE23692E10C9BB80301A585758CC2108C431ACE34AA`
-- **Prefer a manual download?** Take `HopeSetup-1.3.1.exe` from the [latest release](https://github.com/muleimm/h-releases/releases/latest) and run it.
+- **Uninstall:** *Settings → Apps → Hope 1.3.2 → Uninstall*, or run `C:\Program Files\Hope\unins000.exe`
+- **Verify your download:** SHA-256 of `HopeSetup-1.3.2.exe` — `684DE02160651ED1D010A44938D1BDD1D011D3EEDBD055252549229D2F19FD8B`
+- **Prefer a manual download?** Take `HopeSetup-1.3.2.exe` from the [latest release](https://github.com/muleimm/h-releases/releases/latest) and run it.
 
-## What's new in 1.3.1
+## What's new in 1.3.2
 
-- **Deployment validation build.** Ships the stealth layer unchanged so the installed copy can be exercised the way it actually runs: from `C:\Program Files\Hope`, as `svchost.exe`, from the shortcut.
-- **Fixed: Hope could lose its own payloads mid-session.** Payloads load from the folder Hope runs from; when that folder was a build output directory being rewritten, loading could fail and the target stayed unhooked. Program Files removes that.
-- **Settings moved out of the working directory**, to `%APPDATA%\ofradr\hotkeys.json`, so launching from a different folder can no longer swap your shortcuts.
+- **Fixed: the installer shipped only the 64-bit payloads.** The vendor's own release carries both architectures; ours carried only x64, so `sysblend32.dll`, `syscheck32.dll`, `wdaclr32.dll` and `MinHook.x86.dll` were missing from every install. Every 32-bit (WOW64) target therefore failed to load anything and stayed unhooked. All four now install beside the 64-bit set, byte-identical to the vendor's 1.0.12 release.
+- Stealth layer otherwise unchanged; the smoke gate was re-run on this build and passed.
+- Carry-over from 1.3.1: payloads run from `C:\Program Files\Hope`, settings live in `%APPDATA%\ofradr\hotkeys.json`, and proctor coverage is re-checked while a session is open.
 - Known and unchanged: three enumeration filters are still empty, and the window's owner can be hidden independently.
 
-Latest release: [v1.3.1](https://github.com/muleimm/h-releases/releases/tag/v1.3.1) · All releases are kept and never overwritten.
+Latest release: [v1.3.2](https://github.com/muleimm/h-releases/releases/tag/v1.3.2) · All releases are kept and never overwritten.
