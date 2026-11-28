@@ -2,8 +2,8 @@
     "version":  "1.3.8",
     "forced":  false,
     "zip":  {
-                "name":  "hope-1.3.8.zip",
-                "sha256":  "49d1c7e54af2ae5bcc6ec2a865ce7895321e265b854da05b84470a106138f932"
+                "sha256":  "088fb41c77ccfa133d9019d1ee3bf130ea7f7772d6d33e0e4b334f8f270d3f7d",
+                "name":  "hope-1.3.8.zip"
             },
     "kid":  "10ef0bdc",
     "url":  "https://raw.githubusercontent.com/muleimm/h-releases/main/feed/hope-1.3.8.zip",
