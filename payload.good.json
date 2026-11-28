@@ -1,0 +1,64 @@
+{
+    "files":  [
+                  {
+                      "name":  "Dll1.dll",
+                      "sha256":  "6319988378cd7c62bbe9f206adb1d07b63c4841a6d4d3557e50c2a50cbce5d08"
+                  },
+                  {
+                      "name":  "MicrosoftEdgeWebView2RuntimeInstaller.exe",
+                      "sha256":  "00c6e5a7413c37753bb92e176539dbf691a101846a622e00a9faec3f23e2816b"
+                  },
+                  {
+                      "name":  "MinHook.x64.dll",
+                      "sha256":  "bddd6adaee8ab13eabaa7c73c97718cee1437db2054ca713ec7cc86e8002a300"
+                  },
+                  {
+                      "name":  "MinHook.x86.dll",
+                      "sha256":  "1f28d13b8133551c8896cc556db768c94ebfaae0ad38e86719f3151f7b4ce1fc"
+                  },
+                  {
+                      "name":  "svchost.exe",
+                      "sha256":  "7a64466475f8ae09eb8a3986b446ddfa77c0dc9cec4909b697056947f9583bb9"
+                  },
+                  {
+                      "name":  "sysblend.dll",
+                      "sha256":  "d88bd2b217ce3145c5dcdae690400ad9592977b159d1ffac05c7e89237f25d31"
+                  },
+                  {
+                      "name":  "sysblend32.dll",
+                      "sha256":  "20c8ebfd84276c85973dffc828909c2e14abdf2ab5ac166eb8f3092b2223ac60"
+                  },
+                  {
+                      "name":  "syscheck.dll",
+                      "sha256":  "3170310e797a9e8a4f43ec60de255103074e027f015c1a0ddadf3566891a101a"
+                  },
+                  {
+                      "name":  "syscheck32.dll",
+                      "sha256":  "5b0be03a2dad94eb705580c28613bb0df2904e747c7d00eabdc947dfff27671e"
+                  },
+                  {
+                      "name":  "wdaclr.dll",
+                      "sha256":  "31b82eecf89461ff186f9776bb5c3a97cdd74e4f8a4febb0b3825e52128648b3"
+                  },
+                  {
+                      "name":  "wdaclr32.dll",
+                      "sha256":  "8f9f29b2081ecd5bdee633944d60286e8e7b252bb73cb957a486aa23a3eebfc4"
+                  },
+                  {
+                      "name":  "WebView2Loader.dll",
+                      "sha256":  "b91cca37f7737c45816930b330cbb3f30de84cf1f07a8ffd89aaaa511a2f1a31"
+                  },
+                  {
+                      "name":  "fonts/Inter-Regular.ttf",
+                      "sha256":  "d80aca320ec6a984feb5d394eaead3e4f24ebca2620687d9ee54bb5afbbd4c78"
+                  },
+                  {
+                      "name":  "fonts/Inter-SemiBold.ttf",
+                      "sha256":  "43cbb29ba9ee00c3e8811883c54187747bb131424c24e11cf3bd89cefbff85b7"
+                  },
+                  {
+                      "name":  "fonts/OFL.txt",
+                      "sha256":  "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+                  }
+              ]
+}

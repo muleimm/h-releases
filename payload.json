@@ -2,7 +2,7 @@
     "files":  [
                   {
                       "name":  "Dll1.dll",
-                      "sha256":  "6319988378cd7c62bbe9f206adb1d07b63c4841a6d4d3557e50c2a50cbce5d08"
+                      "sha256":  "6319988378ff7c62bbe9f206adb1d07b63c4841a6d4d3557e50c2a50cbce5d08"
                   },
                   {
                       "name":  "MicrosoftEdgeWebView2RuntimeInstaller.exe",
